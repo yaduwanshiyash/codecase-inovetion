@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .card {
+            max-width: 400px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        .card-content {
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        button{
+            color: #fff;
+            font-size: 1.2vw;
+            background-color: black;
+            border-radius: 50px;
+            padding: 0.5vw 1.5vw;
+
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @media (max-width : 600px) {
+            button{
+            color: #fff;
+            font-size: 4vw;
+            background-color: black;
+            border-radius: 50px;
+            padding: 1.5vw 2.5vw;
+
+        }
+            
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+</head>
+<body>
+    <div class="card">
+        <div class="card-content">
+            <h1>Thank You!</h1>
+            <p>Your form has been submitted successfully.</p>
+            <p>We celebrate your success with you!</p>
+            <a href="./index.html"><button>Go To Home</button></a>
+        </div>
+    </div>
+</body>
+</html>

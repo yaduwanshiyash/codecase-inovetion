@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codecase
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="contac.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+   
+    <div id="nav">
+        <div id="nav-left">
+        <img class="img2" src="./images/CodeCase Main Logo 2400x1800 new.png" alt="" srcset="">
+        </div>
+        <div id="nav-right">
+            <a class="res text-target" href="./index.html">home</a>
+            <a class="res text-target" href="./about.html">About</a>
+            <a class="res text-target" href="#page2">intenship domains</a>
+            <a class="res text-target" href="./roadmap.html">Roadmap</a>
+            <a class="res text-target" href="#traning">Traning & programs</a>
+            <a class="res text-target" href="./contact.html">contact</a>
+            <div id="menu">
+                <button onclick="myFunction()" class="menu-btn"><i class="ri-menu-line menu-btn"></i></button>
+                <button onclick="myFunction2()" class="close"><i class="ri-close-line"></i></button>
+            <div class="drop">
+            <a href="./index.html">home</a>
+            <a href="./about.html">About</a>
+            <a href="#">intenship domains</a>
+            <a href="./roadmap.html">Roadmap</a>
+            <a href="#">Traning & programs</a>
+            <a href="./contact.html">contact</a>
+                </div>
+            </div>
+            <!-- <button>Login</button> -->
+        </div>
+        
+
+    </div>
+    <div id="form-page">
+        <button id="close" onclick="closePopup()"><i class="ri-close-line"></i></button>
+        <form action="https://formsubmit.co/b3c6b1a24cae749650a4a38d7cf5d9a8" method="post">
+            <input type="text" name="full name" id="fname" placeholder="full name">
+            <input type="email" name="email" id="email" placeholder="Email Address"> 
+            <input type="text" name="number" id="number" placeholder="phone number">
+            <label for="options">Select an option:</label>
+    <select id="options" name="options">
+        <option value="web development">web development</option>
+        <option value="Android Development">Android Development</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Java Development">Java Development</option>
+        <option value="Data Science">Data Science</option>
+        <option value="C/C++">C/C++</option>
+    </select>
+            <textarea name="massage" placeholder="massage"></textarea>
+            <input type="hidden" name="_next" value="https://docs.google.com/forms/d/e/1FAIpQLSeLTTl_xAoSp-YPb-P4xq-B0T4plJ5EeEzZN-X7NBrw0mRTDw/viewform?pli=1">
+            <input type="submit" value="submit" class="button1">
+        </form>
+    </div>
+    <div id="main">
+        <div id="page1">
+            <div id="page1-left">
+                <h1>Build Your Dreams True!</h1>
+                <h3>Powering Your Vision. We are here to get you there.</h3>
+                <h1>We are hiring Interns!</h1>
+                <button class="magnet-target" onclick="togglePopup()">apply now!→</button>
+            </div>
+            <div id="page1-right">
+                <img class="img3" src="https://img.freepik.com/free-vector/digital-designers-team-drawing-with-pen-computer-monitor_74855-10586.jpg?w=996&t=st=1696883790~exp=1696884390~hmac=ce61f074539b8436bf88992c157e389f2cb0d9b9af1454a9eb3736838ce5d182" alt="" srcset="">
+            </div>
+        </div>
+       
+        <div id="page2">
+            <h1>Internship for one month is now available in the categories mentioned below.</h1>
+            <div id="categories">
+                <div class="card">
+                    <img src="https://img.freepik.com/free-vector/modern-web-design-concept-with-flat-style_23-2147933604.jpg?w=740&t=st=1696884090~exp=1696884690~hmac=b09bd224e9f2b59c3586b773a5b5260901c56de8bb8fe93ea5812d9e09f074d1" alt="" srcset="">
+                    <h1>Web Development Internship </h1>
+                    <p>We are looking for a Web Development Intern to join our team. Intern Will get handson experience of Web Development that help them in future jobs. This Internship offers practical work experience and an introduction to creating and improving Web-Based Systems.</p>
+                    <button onclick="togglePopup()" >apply now</button>
+                </div>
+                <div class="card">
+                    <img src="https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=740&t=st=1696884534~exp=1696885134~hmac=1c2fe5325473fcd388c97c3951179cbf7dd7a7f01f09d6ffb9842a953025e8d7" alt="" srcset="">
+                    <h1>Python programming internship</h1>
+                    <p>As an Android Development Intern, you will Work on real-world projects that will contribute to your professional growth. development tools and technologies.</p>
+                    <button onclick="togglePopup()">apply now</button>
+                </div>
+                <div class="card">
+                    <img src="https://img.freepik.com/premium-vector/web-development-programming-languages-css-html-it-ui-programmer-cartoon-character-developing-website-coding-flat-illustration-banner_128772-1167.jpg?w=900" alt="" srcset="">
+                    <h1>Java Programming Internship</h1>
+                    <p>As a Java Development Intern, you'll have the chance to apply your knowledge in a practical setting, collaborating with experienced professionals on real projects that have a tangible impact.</p>
+                    <button onclick="togglePopup()">apply now</button>
+                </div>
+                <div class="card " id="traning">
+                    <img src="https://img.freepik.com/free-vector/visual-data-concept-illustration_114360-1713.jpg?w=740&t=st=1696884387~exp=1696884987~hmac=c6108003c8feb7e9b8f8e7be89a90557fac97356d52825ecc0290508a738656f" alt="" srcset="">
+                    <h1>Machine learning internship</h1>
+                    <p>As a Data Science Intern, you'll gain hands-on experience working with real datasets, honing your analytical skills, and collaborating with our talented data science team.our data-driven aspirations into reality.</p>
+                    <button onclick="togglePopup()">apply now</button>
+                </div>
+                <div class="card">
+                    <img src="https://img.freepik.com/free-vector/designer-tools-idea-concept_98292-4652.jpg?w=740&t=st=1696884252~exp=1696884852~hmac=0410899d4a9a33f041c141b9f2a10731469d488f48a30ee8a8254ef2ea5e5909" alt="" srcset="">
+                    <h1>Graphic Design Internship</h1>
+                    <p>Here you'll work on exciting design projects, learn from experienced professionals, and contribute your artistic talents to real-world campaigns.gain valuable industry insights. If you're ready to turn your passion for design into a fulfilling profession.</p>
+                    <button onclick="togglePopup()">apply now</button>
+                </div>
+                <div class="card">
+                    <img src="https://img.freepik.com/premium-vector/software-development-concept-with-people-scene-flat-design-man-programming-creating-code-fills-layout-site-corrects-errors-vector-illustration-with-character-situation-web_9209-10279.jpg?w=996" alt="" srcset="">
+                    <h1>C/C++ internships </h1>
+                    <p>C++ is a high-level, general-purpose programming language created by Danish computer scientist Bjarne Stroustrup.</p>
+                    <button onclick="togglePopup()">apply now</button>
+                </div>
+                
+            </div>
+        </div>
+        <div id="page3">
+
+        </div>
+        <div id="footer">
+            <div class="footer-1">
+                <div id="img4"></div>
+                <!-- <h1>CodeCase<span>Internship</span></h1> -->
+                <p>Supaul, Bihar, IN -854339, India</p>
+                <!-- <h2>Phone: +91 *******</h2> -->
+                <h2>Email:Codecase.inovation@gmail.com</h2>
+            </div>
+            <div class="footer-1">
+                <h3>Useful Links</h3>
+                <div class="line"></div>
+                <h4>home</h4>
+                <h4>About us</h4>
+                <h4>
+                    Internship Domains</h4>
+                <h4>
+                    Apply Now</h4>
+                <h4>
+                    Terms & Conditions</h4>
+            </div>
+            <div class="footer-1">
+                <h3>Internship Domains</h3>
+                <div class="line"></div>
+                <h4>Data Science</h4>
+                <h4>Python Development </h4>
+                <h4>Java Development</h4>
+                <h4>Web Development </h4>
+                <h4> Graphic Design</h4>
+            </div>
+            <div class="footer-1">
+                <h3>Join Our Internship</h3>
+                <div class="line"></div>
+                <p>Join the Virtual Internship Program in emerging technologies with CodeCase</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

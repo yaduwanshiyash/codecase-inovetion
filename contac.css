@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-left{
+    height: 100%;
+    width: 90%;
+    /* background-color: bisque; */
+    margin-top: 8vw;
+
+}
+
+
+#contact-left h1{
+    position: relative;
+    top: 3vw;
+    left: 6vw;
+    font-size: 2vw;
+    /* margin: 2vw 4vw; */
+    font-family: gilroy;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#contact-left form{
+    height: 60%;
+    padding: 5vw;
+}
+
+#contact-left form input{
+    font-size: 1vw;
+    border-radius: 5px;
+    height: 3vw;
+    padding: 1vw 2vw;
+    margin: 1vw 1vw;
+    width: 22vw;
+    border: 1px solid gray;
+    caret-color: blue;
+}
+#contact-left form input:focus{
+    outline: 1px solid royalblue;
+}
+#contact-left form input::placeholder{
+    color: rgb(98, 130, 227);
+}
+
+#contact-left form textarea{
+    margin-left: 1vw;
+    font-size: 1vw;
+    padding: 1vw;
+    border: 1px solid gray;
+    caret-color: blue;
+    height: 8vw;
+    width: 46vw;
+
+}
+#contact-left form textarea::placeholder{
+    color: royalblue;
+
+}
+#contact-left form textarea:focus{
+    outline: 1px solid royalblue;
+}
+
+#contact-left form button{
+    padding: 1vw;
+    border-radius: 0.5vw;
+    border: none;
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: royalblue;
+    margin-left: 1vw;
+    margin-top: 2vw;
+}
+#contact-right{
+    height: 100%;
+    width: 60%;
+    padding: 4vw 2vw;
+    /* background-color: violet; */
+     margin-top: 6vw;
+
+}
+#contact-right h1{
+    font-family: gilroy;
+    font-weight: 700;
+
+}
+
+.address{
+    height: 3vw;
+    width: 100%;
+    margin-top: 2vw;
+}
+.address i{
+    font-size: 2vw;
+    color: royalblue;
+    font-weight: 100;
+}
+.address h2{
+    color: gray;
+    font-size: 1.2vw;
+    
+}
+
+
+.social-link{
+    height: 4vw;
+    width: 100%;
+    position: relative;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2vw;
+}
+.social-link i{
+    font-size: 2vw;
+    transition: all ease 1s;
+}
+
+.social-link i:hover{
+    font-size: 3vw;
+    color: royalblue;
+}
+
+#map{
+    height: 60vh;
+    width: 100%;
+}
+

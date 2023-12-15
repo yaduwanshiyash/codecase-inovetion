@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    position: fixed;
+    z-index: 9;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: gray; */
+    padding: 3vw;
+}
+#nav-left img{
+    object-fit: cover;
+    object-position: center;
+    height: 5vw;
+    width: 12vw;
+}
+
+#nav-right a{
+    font-size: 1.2vw;
+    color: black;
+    text-transform: capitalize;
+    margin-left: 1vw;
+    text-decoration: none;
+}
+#nav-right{
+    padding: 2vw;
+}
+#nav-right a:hover{
+    text-decoration: underline  #20DCC3 5px;
+    
+}
+
+.drop{
+    opacity: 0;
+    pointer-events: none;
+    height: 70vw;
+    width: 35vw;
+    background-color: rgba(0, 0, 0, 0.823);
+    position: absolute;
+    right: 6%;
+    border-radius: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 2vw 3vw;
+}
+.drop a{
+    font-size: 5vw !important;
+    border-bottom: 1.5px solid #22cfb8;
+    color: #fff !important;
+    font-weight: 100 !important;
+
+}
+.menu-btn{
+    opacity: 0;
+}
+.close{
+    display: none;
+}
+
+
+
+button{
+    background-color: #22CFB8;
+    padding: 0.8vw 1.2vw;
+    font-size: 0.9vw;
+    font-weight: bold;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    margin-left: 2vw;
+    text-transform: capitalize;
+}
+button:hover{
+    background-color: #20dcc3;
+}
+
+#page1{
+    height: calc(100vh - 13vh);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page1-left{
+    height: 100%;
+    opacity: 1;
+    width: 50%;
+    padding: 8vw;
+    line-height: 5vw;
+}
+#page1-left h1{
+    color: #012970;
+    font-size: 3vw;
+    font-family: gilroy;
+
+}
+#page1-left h3{
+    font-size: 2vw;
+    color: #000;
+    font-weight: normal;
+    line-height: 2vw;
+}
+#page1-left button{
+    padding: 1vw 3vw;
+    font-size: 1vw;
+    margin-left: -0.3vw;
+}
+#page1-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page1-right img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    opacity: 0;
+    
+}
+
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    
+}
+#page2 h1{
+    text-align: center;
+    padding: 2vw;
+    font-size: 1.8vw;
+    color: #012970;
+}
+
+#categories{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    padding: 1vw;
+    height: 85vh;
+    width: 26vw;
+    -webkit-box-shadow: 0px 2px 14px 3px rgba(196,196,196,0.44);
+-moz-box-shadow: 0px 2px 14px 3px rgba(196,196,196,0.44);
+box-shadow: 0px 2px 14px 3px rgba(196,196,196,0.44);
+    margin-bottom: 1vw;
+    transition: all ease 1s;
+}
+.card:hover{
+    -webkit-box-shadow: 0px 2px 26px 4px rgba(196,196,196,1);
+-moz-box-shadow: 0px 2px 26px 4px rgba(196,196,196,1);
+box-shadow: 0px 2px 26px 4px rgba(196,196,196,1);
+}
+.card img{
+    height: 45%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease 0.8s;
+
+}
+.card:hover img{
+    scale: 0.9;
+}
+
+.card p{
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.card button{
+    position: relative;
+    left: 30%;
+    margin-top: 0.8vw;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+}
+
+#footer{
+    height: 45vh;
+    width: 100%;
+    background-color: #1B1B1B;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0vw 4vw;
+    
+}
+
+.footer-1{
+    height: 100%;
+    width: 25%;
+    /* background-color: gray; */
+    padding: 2.5vw;
+    line-height: 2vw;
+    color: #fff;
+}
+
+.footer-1 h1{
+    color: white;
+}
+.footer-1 span{
+    color: #20DCC3;
+}
+.footer-1 h2{
+    font-size: 1.1vw;
+    text-transform: capitalize;
+}
+
+
+.footer-1 h3{
+    color: white;
+    font-size: 1vw;
+    text-transform: capitalize;
+    font-family: raleway;
+    font-weight: 900;
+
+}
+.footer-1 h4{
+    color: rgb(142, 140, 140);
+    text-transform: capitalize;
+    font-family:sans ;
+    font-weight: 100;
+}
+
+.footer-1 p{
+    font-size: 1.2vw;
+    font-family: sans;
+}
+
+.line{
+    height: 0.2vw;
+    border-radius: 2vw;
+    width: 1.8vw;
+    background-color: #20DCC3;
+}
+
+
+#form-page{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 80vh;
+    z-index: 9;
+    width: 60vw;
+    background-color: #dadadad2;
+    border-radius: 20px;
+    border: 2px solid gray;
+    display: none;
+}
+
+
+
+
+#form-page h1{
+    position: relative;
+    top: 3vw;
+    left: 6vw;
+    font-size: 2vw;
+    /* margin: 2vw 4vw; */
+    font-family: gilroy;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#form-page form{
+    height: 30%;
+    padding: 5vw;
+}
+
+#form-page form input{
+    font-size: 1vw;
+    border-radius: 5px;
+    height: 3vw;
+    padding: 1vw 2vw;
+    margin: 1vw 1vw;
+    width: 22vw;
+    border: 1px solid gray;
+    caret-color: blue;
+}
+#form-page form input:focus{
+    outline: 1px solid royalblue;
+}
+#form-page form input::placeholder{
+    color: rgb(98, 130, 227);
+}
+
+#form-page form textarea{
+    margin-left: 1vw;
+    font-size: 1vw;
+    padding: 1vw;
+    border: 1px solid gray;
+    caret-color: blue;
+    height: 8vw;
+    width: 46vw;
+
+}
+#form-page form textarea::placeholder{
+    color: royalblue;
+
+}
+#form-page form textarea:focus{
+    outline: 1px solid royalblue;
+}
+
+#form-page form button{
+    padding: 1vw;
+    border-radius: 0.5vw;
+    border: none;
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: royalblue;
+    margin-left: 1vw;
+    margin-top: 2vw;
+}
+
+#close{
+    position: relative;
+    right: -90%;
+    top: 2%;
+}
+
+.button1{
+    padding: 0vw;
+    /* border-radius: 0.5vw; */
+    border: none;
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: royalblue;
+}
+
+label{
+    font-family: gilroy;
+    font-weight: 500;
+}
+
+select{
+    font-size: 1.2vw;
+    color: #012970;
+}
+
+
+#img4{
+    height: 12vh;
+    width: 18vw;
+    background-image: url(./images/CodeCase\ Inverted\ Color\ 800x600.png);
+    background-size: cover;
+    background-position: center;
+}
