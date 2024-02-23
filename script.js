@@ -18,17 +18,40 @@ ScrollTrigger.refresh();
 
 
 function myFunction() {
-  document.querySelector(".drop").style.opacity = "1";
+  // document.querySelector(".drop").style.opacity = "1";
+  document.querySelector(".drop").style.display = "block";
   document.querySelector(".drop").style.pointerEvents = "all";
     document.querySelector(".menu-btn").style.display = "none";
     document.querySelector(".close").style.display = "block";
+    document.querySelector(".close").style.opacity = "1";
+    gsap.to(".drop",{
+      transform: 'translateX(-70%)',
+      duration:1,
+      opacity:1,
+      ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    })
+  }
+  
+
+  function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      document.nav.classList.toggle('dark-mode');
   }
 
 
+
   function myFunction2() {
+    document.querySelector(".drop").style.display = "none";
       document.querySelector(".menu-btn").style.display = "block";
-    document.querySelector(".drop").style.opacity = "0";
+      document.querySelector(".close").style.display = "none";
+    // document.querySelector(".drop").style.opacity = "0";
     document.querySelector(".close").style.opacity = "0";
+    gsap.to(".drop",{
+      transform: 'translateX(100%)',
+      duration:1,
+      opacity:0,
+      ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    })
   }
 
   Shery.makeMagnet(".magnet-target" /* Element to target.*/, {
@@ -48,11 +71,11 @@ function myFunction() {
   });
 
 
-gsap.to("#nav",{
-  y:20,
-  duration:2,
-  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-})
+// gsap.to("#nav",{
+//   y:0,
+//   duration:2,
+//   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+// })
 
 gsap.from(".img2",{
   y:-30,
@@ -124,7 +147,7 @@ var elements = document.querySelectorAll('.b-rightside');
 // Loop through each element and add animations with staggered delays
 elements.forEach((element, index) => {
   tl.to(element, {
-    transform: 'translateX(-10%)',
+    transform: 'translateX(-5%)',
     opacity: 1,
     duration: 3,
     ease: 'power4',
@@ -180,16 +203,16 @@ gsap.to(line, {
 
 
 
-var eleme = document.querySelectorAll('.circle');
+var circle = document.querySelectorAll('.zero');
 
-// Loop through each element and add animations with staggered delays
-eleme.forEach((eleme, index) => {
-  tl.to(eleme, {
-    backgroundColor:"#22CFB8",
+// Loop through each  and add animations with staggered delays
+circle.forEach((circle, index) => {
+  tl.to(circle, {
+    backgroundColor:"#6A73FC",
     duration: 3,
     ease: 'power4',
     scrollTrigger: {
-      trigger: eleme,
+      trigger: circle,
       scroller: '#main',
       // markers: true,
       start: 'top 60%',
@@ -207,3 +230,23 @@ function closePopup() {
   document.getElementById("form-page").style.display = "none";
 
 }
+
+
+const body = document.querySelector("body")
+const navbar = document.getElementById("nav");
+
+body.addEventListener("wheel",function(dets){
+  if(dets.deltaY > 0){
+    gsap.to(navbar,{
+      transform: 'translateY(-30vw)',
+      duration:2,
+      ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    })
+  }else{
+    gsap.to(navbar,{
+      transform: 'translateY(0%)',
+      duration:1,
+      ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    })
+  }
+})

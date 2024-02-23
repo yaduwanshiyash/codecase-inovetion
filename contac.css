@@ -8,7 +8,7 @@ html,body{
     width: 100%;
 }
 
-#page1{
+#cpage1{
     height: 80vh;
     width: 100%;
     display: flex;
@@ -75,13 +75,13 @@ html,body{
 #contact-left form textarea:focus{
     outline: 1px solid royalblue;
 }
-
 #contact-left form button{
+
     padding: 1vw;
     border-radius: 0.5vw;
     border: none;
-    font-size: 1vw;
     text-transform: uppercase;
+    font-size: 1vw;
     color: #fff;
     background-color: royalblue;
     margin-left: 1vw;
