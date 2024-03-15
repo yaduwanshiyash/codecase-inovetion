@@ -77,11 +77,11 @@ html,body{
 }
 #contact-left form button{
 
-    padding: 1vw;
+    padding: 1vw 2vw;
     border-radius: 0.5vw;
     border: none;
     text-transform: uppercase;
-    font-size: 1vw;
+    font-size: 1vw ;
     color: #fff;
     background-color: royalblue;
     margin-left: 1vw;

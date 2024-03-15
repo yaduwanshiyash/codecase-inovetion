@@ -1,41 +1,54 @@
 gsap.registerPlugin(ScrollTrigger);
+
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
-  smooth: true
+  smooth: true,
+
+  // for tablet smooth
+  tablet: { smooth: true },
+
+  // for mobile
+  smartphone: { smooth: true }
 });
 locoScroll.on("scroll", ScrollTrigger.update);
+
 ScrollTrigger.scrollerProxy("#main", {
   scrollTop(value) {
-    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-  }, 
-  getBoundingClientRect() {
-    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+    return arguments.length
+      ? locoScroll.scrollTo(value, 0, 0)
+      : locoScroll.scroll.instance.scroll.y;
   },
-  pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
+  getBoundingClientRect() {
+    return {
+      top: 0,
+      left: 0,
+      width: window.innerWidth,
+      height: window.innerHeight
+    };
+  }
+
+
 });
+
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
 ScrollTrigger.refresh();
 
 
+
 function myFunction() {
-  // document.querySelector(".drop").style.opacity = "1";
+  document.querySelector(".drop").style.opacity = "1";
   document.querySelector(".drop").style.display = "block";
   document.querySelector(".drop").style.pointerEvents = "all";
     document.querySelector(".menu-btn").style.display = "none";
     document.querySelector(".close").style.display = "block";
     document.querySelector(".close").style.opacity = "1";
     gsap.to(".drop",{
-      transform: 'translateX(-70%)',
+      transform: 'translateY(0%)',
       duration:1,
       opacity:1,
       ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     })
-  }
-  
-
-  function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-      document.nav.classList.toggle('dark-mode');
   }
 
 
@@ -44,11 +57,11 @@ function myFunction() {
     document.querySelector(".drop").style.display = "none";
       document.querySelector(".menu-btn").style.display = "block";
       document.querySelector(".close").style.display = "none";
-    // document.querySelector(".drop").style.opacity = "0";
+    document.querySelector(".drop").style.opacity = "0";
     document.querySelector(".close").style.opacity = "0";
     gsap.to(".drop",{
-      transform: 'translateX(100%)',
-      duration:1,
+      transform: 'translateY(-150%)',
+      duration:2,
       opacity:0,
       ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     })
@@ -239,12 +252,14 @@ body.addEventListener("wheel",function(dets){
   if(dets.deltaY > 0){
     gsap.to(navbar,{
       transform: 'translateY(-30vw)',
+      width: '150%',
       duration:2,
       ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     })
   }else{
     gsap.to(navbar,{
       transform: 'translateY(0%)',
+      width: '90%',
       duration:1,
       ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     })

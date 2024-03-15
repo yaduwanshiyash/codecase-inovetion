@@ -40,7 +40,9 @@ button {
   cursor: pointer;
   /* transform: skew(-21deg); */
 }
-
+a{
+  text-decoration: none;
+}
 /* span {
   display: inline-block;
   transform: skew(50deg);
@@ -86,7 +88,7 @@ button:hover::before {
   align-items: center;
   justify-content: space-between;
   backdrop-filter: blur(5px);
-background: rgba(14, 28, 221, 0.26);
+background: rgba(139, 146, 247, 0.26);
 border-radius: 50px 50px 50px 50px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.9px);
@@ -115,12 +117,29 @@ border: 1px solid #6A73FC;
   padding: 2vw;
 }
 #nav-right a:hover{
-  /* text-decoration: underline  #20DCC3 5px; */
-  border-bottom: 4px solid #FA9746;
+  border-bottom: 4px solid blue;
   
 }
 
 .drop{
+  display: none;
+  position: absolute;
+  transform: translateY(-150%);
+  width: 100%;
+  height: 30vh;
+  border-radius: 20px;
+  left: 0;
+  top: 0;
+  font-size: 10vw;
+  color: #fff;
+  padding: 1vw 2vw;
+  background-color: rgb(36, 35, 35);
+}
+.drop a{
+ text-decoration: none;
+
+}
+/* .drop{
   display: none;
   z-index: 9;
   opacity: 0;
@@ -136,6 +155,7 @@ border: 1px solid #6A73FC;
   justify-content: center;
   gap: 10vw;
   padding: 2vw 3vw;
+  margin-top: 2vw;
 }
 .drop a{
   font-size: 8vw !important;
@@ -146,11 +166,10 @@ border: 1px solid #6A73FC;
   display: block;
   top: 30%;
   text-align: center;
-  /* border-bottom: 1.5px solid gray; */
   color: #fff !important;
   font-weight: 500 !important;
 
-}
+} */
 
 .menu-btn{
   opacity: 0;
@@ -231,7 +250,7 @@ button:hover{
 
 
 #page2{
-  height: 100vh;
+  height: 200vh;
   width: 100%;
   
 }
@@ -291,6 +310,7 @@ box-shadow: 0px 2px 26px 4px rgba(196,196,196,1);
 #page3{
   height: 100vh;
   width: 100%;
+  display: none;
 }
 
 #footer{
@@ -379,14 +399,14 @@ box-shadow: 0px 2px 26px 4px rgba(196,196,196,1);
 
 
 #form-page{
-  position: absolute;
-  top: 30%;
+  position: fixed;
+  top: 20%;
   left: 50%;
   transform: translate(-50%,-50%);
   height: 80vh;
   z-index: 9;
   width: 60vw;
-  background-color: #dadada3c;
+  background-color: lavender;
   backdrop-filter: blur(5px);
   border-radius: 20px;
   border: 2px solid gray;
